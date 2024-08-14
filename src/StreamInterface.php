@@ -41,7 +41,7 @@ interface StreamInterface
 	 *
 	 * After the stream has been detached, the stream is in an unusable state.
 	 *
-	 * @return int|null Underlying PHP stream, if any
+	 * @return mixed|null Underlying PHP stream, if any
 	 */
 	public function detach();
 
@@ -152,9 +152,6 @@ interface StreamInterface
 	 *
 	 * @link http://php.net/manual/en/function.stream-get-meta-data.php
 	 * @param string|null $key Specific metadata to retrieve.
-	 * @return array|mixed|null Returns an associative array if no key is
-	 *     provided. Returns a specific key value if a key is provided and the
-	 *     value is found, or null if the key is not found.
 	 */
-	public function getMetadata(?string $key = null);
+	public function getMetadata(?string $key = null) : ?array;
 }
