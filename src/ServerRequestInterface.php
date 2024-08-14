@@ -107,9 +107,9 @@ interface ServerRequestInterface extends RequestInterface
 	 * values, you may need to parse the query string from `getUri()->getQuery()`
 	 * or from the `QUERY_STRING` server param.
 	 *
-	 * @return array
+	 * @return mixed
 	 */
-	public function getQueryParams();
+	public function getQueryParams() : array;
 
 	/**
 	 * Return an instance with the specified query string arguments.
