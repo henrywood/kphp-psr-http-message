@@ -44,6 +44,17 @@ namespace Psr\Http\Message;
  */
 interface ServerRequestInterface extends RequestInterface
 {
+
+	/*
+	 * Get one request parameter
+	 *
+	 * @param string|null $name the parameter name
+	 * @param mixed|null  $default the default parameter value if the parameter does not exist.
+	 * 
+	 * @return mixed 
+	 */
+	public function get(string $name = null, mixed $default = null): mixed;
+
 	/**
 	 * Retrieve server parameters.
 	 *
