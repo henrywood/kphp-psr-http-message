@@ -2,7 +2,8 @@ PSR Http Message
 ================
 
 This repository holds all interfaces/classes/traits related to
-[PSR-7](http://www.php-fig.org/psr/psr-7/).
+[PSR-7](http://www.php-fig.org/psr/psr-7/) adapted slightly for this PSR-7 implementation:
+[KPHP-HTTP_MESSAGE](https://github.com/henrywood/kphp-http-message/).
 
 Note that this is not a HTTP message implementation of its own. It is merely an
 interface that describes a HTTP message. See the specification for more details.
